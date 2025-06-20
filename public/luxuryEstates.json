@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/XZ0fjMj/penthouse.jpg",
+    "estate_title": "Skyline Penthouse",
+    "segment_name": "Penthouse",
+    "description": "A luxury penthouse with a breathtaking city view and private terrace.",
+    "price": "$3,500,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": "New York, NY",
+    "facilities": ["Private Elevator", "Rooftop Pool", "Home Theater"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/SQgykr9/beachfront-villa.jpg",
+    "estate_title": "Malibu Beachfront Villa",
+    "segment_name": "Beachfront Villa",
+    "description": "Beachfront luxury villa with modern architecture and ocean view.",
+    "price": "$6,800,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Malibu, CA",
+    "facilities": ["Infinity Pool", "Open Deck", "Private Beach Access"]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/4PmJfVr/private-island.jpg",
+    "estate_title": "Tropical Private Island",
+    "segment_name": "Private Island",
+    "description": "An exclusive private island with eco-luxury villas and clear blue water.",
+    "price": "$15,000,000",
+    "status": "sale",
+    "area": "Entire Island",
+    "location": "Bahamas",
+    "facilities": ["Helipad", "Yacht Dock", "Eco-Resort Villas"]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/f8s2jLc/luxury-resort.jpg",
+    "estate_title": "Bali Oceanfront Resort",
+    "segment_name": "Luxury Resort",
+    "description": "Award-winning resort with private suites and spa facilities.",
+    "price": "$9,200,000",
+    "status": "sale",
+    "area": "12,000 sq ft",
+    "location": "Bali, Indonesia",
+    "facilities": ["Spa Center", "Luxury Suites", "Event Hall"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/fk5MZm2/mansion.jpg",
+    "estate_title": "Modern Hillside Mansion",
+    "segment_name": "Mansion",
+    "description": "State-of-the-art mansion with panoramic views and smart home tech.",
+    "price": "$5,600,000",
+    "status": "sale",
+    "area": "8000 sq ft",
+    "location": "Los Angeles, CA",
+    "facilities": ["Smart Home System", "Wine Cellar", "Gym"]
+  }
+]
