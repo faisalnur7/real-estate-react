@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/q0sWgS5/res1.jpg",
+    "estate_title": "Modern Family Home",
+    "segment_name": "Single-family",
+    "description": "A beautiful modern home with spacious interiors and a backyard.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "2000 sq ft",
+    "location": "Los Angeles, CA",
+    "facilities": ["Living Room", "Swimming Pool", "Kitchen"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/McbKk9M/res2.jpg",
+    "estate_title": "Urban Apartment",
+    "segment_name": "Apartment",
+    "description": "An affordable apartment in the heart of the city.",
+    "price": "$1,200/mo",
+    "status": "rent",
+    "area": "850 sq ft",
+    "location": "New York, NY",
+    "facilities": ["Elevator Access", "Balcony", "Gym"]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/vJmSBL5/res3.jpg",
+    "estate_title": "Beachside Villa",
+    "segment_name": "Vacation Rental",
+    "description": "Luxury beachside property perfect for a summer retreat.",
+    "price": "$950,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": "Malibu, CA",
+    "facilities": ["Private Beach", "Jacuzzi", "Outdoor Bar"]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/n7g4Yrz/res4.jpg",
+    "estate_title": "Student Housing",
+    "segment_name": "Student Housing",
+    "description": "Fully furnished and affordable housing near the university.",
+    "price": "$600/mo",
+    "status": "rent",
+    "area": "600 sq ft",
+    "location": "Boston, MA",
+    "facilities": ["Study Area", "WiFi", "Shared Kitchen"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/tc5nWZ7/res5.jpg",
+    "estate_title": "Retirement Community Home",
+    "segment_name": "Senior Living",
+    "description": "Quiet and comfortable home in a senior-friendly community.",
+    "price": "$300,000",
+    "status": "sale",
+    "area": "1200 sq ft",
+    "location": "Phoenix, AZ",
+    "facilities": ["Medical Access", "Community Center", "Garden"]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/gJtHFz3/res6.jpg",
+    "estate_title": "Cozy Suburban House",
+    "segment_name": "Townhouse",
+    "description": "A cozy house located in a quiet suburban neighborhood.",
+    "price": "$380,000",
+    "status": "sale",
+    "area": "1600 sq ft",
+    "location": "Denver, CO",
+    "facilities": ["Garage", "Fireplace", "Backyard"]
+  }
+]
