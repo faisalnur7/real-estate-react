@@ -1,19 +1,16 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/AuthContext";
-import { ToastContainer, toast } from 'react-toastify';
-import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from "firebase/auth";
-import { getAuth } from "firebase/auth";
-import app from "../firebase/firebase.config";
+import { toast } from "react-toastify";
+import { GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 
-const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
 const Login = () => {
   const { login, handleSocialLogin } = useContext(UserContext);
-  const [error, setError] = useState("");
   const navigate = useNavigate();
+  const inputClass = "input input-bordered w-full mb-4";
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -26,7 +23,6 @@ const Login = () => {
         navigate("/");
       })
       .catch(() => {
-        setError("Invalid credentials");
         toast.error("Invalid email or password");
       });
   };
@@ -37,34 +33,23 @@ const Login = () => {
         toast.success(`Logged in with ${providerName}`);
         navigate("/");
       })
-      .catch(() => toast.error(`${providerName} login failed`));
-  };
-
-  const handleGithubLogin = () => {
-    signInWithPopup(auth, githubProvider)
-      .then(() => {
-        toast.success("Logged in with GitHub");
-        navigate("/");
-      })
-      .catch(() => toast.error("GitHub login failed"));
+      .catch(() => {
+        toast.error(`${providerName} login failed`);
+      });
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 bg-gray-100 dark:bg-gray-900">
       <form onSubmit={handleLogin} className="w-full max-w-md p-8 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
         <h2 className="text-2xl font-bold mb-6 text-center dark:text-white">Login</h2>
-        <input name="email" type="email" placeholder="Email" required className="input input-bordered w-full mb-4" />
-        <input name="password" type="password" placeholder="Password" required className="input input-bordered w-full mb-4" />
-
-        {error && <p className="text-red-500 text-sm">{error}</p>}
+        <input name="email" type="email" placeholder="Email" required className={inputClass} />
+        <input name="password" type="password" placeholder="Password" required className={inputClass} />
 
         <button className="btn btn-primary w-full mb-3">Login</button>
-
-        <button type="button" onClick={() => handleThirdPartyLogin(googleProvider, "Google")} className="btn w-full mb-2">Login with Google</button>
-        <button type="button" onClick={() => handleThirdPartyLogin(githubProvider, "GitHub")} className="btn w-full mb-2">Login with GitHub</button>
-
-        <p className="text-sm mt-4 dark:text-gray-300">
-          Don't have an account? <Link to="/register" className="text-indigo-600">Register</Link>
+        <button type="button" onClick={() => handleThirdPartyLogin(googleProvider, "Google")} className="btn w-full mb-2" > Login with Google </button>
+        <button type="button" onClick={() => handleThirdPartyLogin(githubProvider, "GitHub")} className="btn w-full mb-2" > Login with GitHub</button>
+        <p className="text-sm mt-4 dark:text-gray-300 text-center">Do not have an account?{" "}
+          <Link to="/register" className="text-indigo-600">Register</Link>
         </p>
       </form>
     </div>
