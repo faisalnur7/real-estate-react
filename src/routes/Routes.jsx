@@ -4,6 +4,9 @@ import Root from "../layout/Root";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Profile from "../pages/Profile";
+import EstateDetails from "../pages/EstateDetails";
+import NotFound from "../pages/NotFound";
 
 
 const router = createBrowserRouter([
@@ -19,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: "/properties",
                 element: <div>Properties</div>,
+            },
+            {
+                path: "/estate_details/:id",
+                element: <PrivateRoute><EstateDetails /></PrivateRoute>,
             },
             {
                 path: "/about",
@@ -37,12 +44,12 @@ const router = createBrowserRouter([
                 element: <Register />,
             },
             {
-                path: "/not_found",
-                element: <div>Not found</div>,
+                path: "*",
+                element: <NotFound />,
             },
             {
                 path: "/Profile",
-                element: <PrivateRoute><div>Profile</div></PrivateRoute>,
+                element: <PrivateRoute><Profile /></PrivateRoute>,
             },
         ],
     },

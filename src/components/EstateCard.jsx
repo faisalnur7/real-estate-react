@@ -11,7 +11,8 @@ const EstatesCard = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {estateData.map((estate) => (
                     <div
-                        key={estate.id}
+                        key={estate.id} data-aos="zoom-in"
+                        data-aos-duration="300"
                         className="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl"
                     >
                         <img
