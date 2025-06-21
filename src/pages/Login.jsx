@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/AuthContext";
 import { toast } from "react-toastify";
 import { GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
@@ -10,6 +10,7 @@ const githubProvider = new GithubAuthProvider();
 const Login = () => {
   const { login, handleSocialLogin } = useContext(UserContext);
   const navigate = useNavigate();
+  const location = useLocation();
   const inputClass = "input input-bordered w-full mb-4";
 
   const handleLogin = (e) => {
@@ -18,12 +19,14 @@ const Login = () => {
     const password = e.target.password.value;
 
     login(email, password)
-      .then(() => {
-        toast.success("Login successful");
-        navigate("/");
+      .then((result) => {
+        navigate(location?.state ? location.state : '/');
       })
-      .catch(() => {
-        toast.error("Invalid email or password");
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        console.error("Error logging in:", errorCode, errorMessage);
       });
   };
 
@@ -31,7 +34,7 @@ const Login = () => {
     handleSocialLogin(provider)
       .then(() => {
         toast.success(`Logged in with ${providerName}`);
-        navigate("/");
+        navigate(location?.state ? location.state : '/');
       })
       .catch(() => {
         toast.error(`${providerName} login failed`);

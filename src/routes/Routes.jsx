@@ -7,6 +7,8 @@ import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import EstateDetails from "../pages/EstateDetails";
 import NotFound from "../pages/NotFound";
+import Estates from "../pages/Estates";
+import About from "../pages/About";
 
 
 const router = createBrowserRouter([
@@ -21,7 +23,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/properties",
-                element: <div>Properties</div>,
+                element: <Estates />,
+                loader: () => fetch('/luxuryEstates.json'),
             },
             {
                 path: "/estate_details/:id",
@@ -29,11 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <div>About</div>,
-            },
-            {
-                path: "/contact",
-                element: <div>Contact</div>,
+                element: <About />,
             },
             {
                 path: "/login",
