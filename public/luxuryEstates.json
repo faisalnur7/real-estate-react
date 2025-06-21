@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://i.ibb.co/XZ0fjMj/penthouse.jpg",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
     "estate_title": "Skyline Penthouse",
     "segment_name": "Penthouse",
     "description": "A luxury penthouse with a breathtaking city view and private terrace.",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "image": "https://i.ibb.co/SQgykr9/beachfront-villa.jpg",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
     "estate_title": "Malibu Beachfront Villa",
     "segment_name": "Beachfront Villa",
     "description": "Beachfront luxury villa with modern architecture and ocean view.",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "image": "https://i.ibb.co/4PmJfVr/private-island.jpg",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
     "estate_title": "Tropical Private Island",
     "segment_name": "Private Island",
     "description": "An exclusive private island with eco-luxury villas and clear blue water.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "image": "https://i.ibb.co/f8s2jLc/luxury-resort.jpg",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
     "estate_title": "Bali Oceanfront Resort",
     "segment_name": "Luxury Resort",
     "description": "Award-winning resort with private suites and spa facilities.",
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "image": "https://i.ibb.co/fk5MZm2/mansion.jpg",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
     "estate_title": "Modern Hillside Mansion",
     "segment_name": "Mansion",
     "description": "State-of-the-art mansion with panoramic views and smart home tech.",
@@ -58,5 +58,125 @@
     "area": "8000 sq ft",
     "location": "Los Angeles, CA",
     "facilities": ["Smart Home System", "Wine Cellar", "Gym"]
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
+    "estate_title": "Cliffside Ocean Villa",
+    "segment_name": "Villa",
+    "description": "A modern villa perched on a cliff with panoramic sea views.",
+    "price": "$4,750,000",
+    "status": "sale",
+    "area": "6200 sq ft",
+    "location": "Santorini, Greece",
+    "facilities": ["Infinity Pool", "Private Sauna", "Ocean Terrace"]
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "estate_title": "Urban Skyline Residence",
+    "segment_name": "Penthouse",
+    "description": "An ultra-modern penthouse with floor-to-ceiling glass walls.",
+    "price": "$5,300,000",
+    "status": "sale",
+    "area": "3900 sq ft",
+    "location": "Chicago, IL",
+    "facilities": ["Smart Glass Walls", "Skydeck", "Private Elevator"]
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
+    "estate_title": "Hillside Retreat Mansion",
+    "segment_name": "Mansion",
+    "description": "Sprawling mansion surrounded by nature and modern amenities.",
+    "price": "$6,900,000",
+    "status": "sale",
+    "area": "9000 sq ft",
+    "location": "Aspen, CO",
+    "facilities": ["Indoor Pool", "Home Theater", "Mountain View Deck"]
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227",
+    "estate_title": "Modern Coastal Paradise",
+    "segment_name": "Beachfront",
+    "description": "Luxury estate with contemporary design and direct beach access.",
+    "price": "$7,800,000",
+    "status": "sale",
+    "area": "6800 sq ft",
+    "location": "Gold Coast, Australia",
+    "facilities": ["Beach Lounge", "Outdoor Bar", "Saltwater Pool"]
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "estate_title": "Executive Sky Loft",
+    "segment_name": "Penthouse",
+    "description": "Stylish loft located in the heart of the financial district.",
+    "price": "$4,200,000",
+    "status": "sale",
+    "area": "3400 sq ft",
+    "location": "London, UK",
+    "facilities": ["Smart Automation", "Library", "Sky Lounge"]
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "estate_title": "Luxury Marina Estate",
+    "segment_name": "Resort",
+    "description": "Resort-style estate with direct marina and yacht access.",
+    "price": "$10,500,000",
+    "status": "sale",
+    "area": "13,000 sq ft",
+    "location": "Dubai, UAE",
+    "facilities": ["Yacht Dock", "Spa Pavilion", "Glass Atrium"]
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "estate_title": "Zen Coastal Hideaway",
+    "segment_name": "Beachfront Villa",
+    "description": "A tranquil beachfront villa with Japanese-inspired design.",
+    "price": "$6,100,000",
+    "status": "sale",
+    "area": "5200 sq ft",
+    "location": "Kyoto, Japan",
+    "facilities": ["Zen Garden", "Onsen Spa", "Tea Room"]
+  },
+  {
+    "id": 13,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "estate_title": "Tuscany Countryside Estate",
+    "segment_name": "Villa",
+    "description": "Rustic luxury villa in Tuscany with vineyard and olive groves.",
+    "price": "$3,900,000",
+    "status": "sale",
+    "area": "7500 sq ft",
+    "location": "Tuscany, Italy",
+    "facilities": ["Wine Cellar", "Olive Press", "Panoramic Courtyard"]
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "estate_title": "Golden Bay Island",
+    "segment_name": "Private Island",
+    "description": "An untouched private island with eco-conscious design.",
+    "price": "$22,000,000",
+    "status": "sale",
+    "area": "Entire Island",
+    "location": "Philippines",
+    "facilities": ["Solar Grid", "Lagoon Bungalows", "Sustainable Garden"]
+  },
+  {
+    "id": 15,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "estate_title": "Lakeside Winter Lodge",
+    "segment_name": "Mansion",
+    "description": "A cozy but massive estate near a frozen lake and forest trail.",
+    "price": "$5,700,000",
+    "status": "sale",
+    "area": "7200 sq ft",
+    "location": "Lake Tahoe, NV",
+    "facilities": ["Fireplace Hall", "Ski Room", "Indoor Pool"]
   }
 ]

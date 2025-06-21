@@ -1,17 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const Root = () => {
-    <div className="max-w-[1200px] mx-auto">
-        <Header />
-        <Navbar />
-
-        <Outlet></Outlet>
-
-        <Footer />
-    </div>
+    return (
+        <div className="mx-auto font-poppins">
+            <Header />
+            <Outlet></Outlet>
+            <Footer />
+            <ToastContainer />
+        </div>
+    );
 }
 
 export default Root;
